@@ -1,4 +1,4 @@
-// //Business Logic
+//Business Logic
 function tallyUp(array) {
   let goPoints = 0;
   let pyPoints = 0;
@@ -56,6 +56,8 @@ $(document).ready(function() {
 
     $(".language-chosen").html(result);
     $(".name").html(androidName);
+    $(".results-logo").html("<img src=\"img/"+ result + ".png\"  width=\"50%\">")
+
     if (result === "Javascript") {
       $("#yes-tie").toggle();
     } else {
