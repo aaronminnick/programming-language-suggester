@@ -20,18 +20,19 @@ function tallyUp(array) {
     return "Python";
   } else if (swPoints > goPoints && swPoints > pyPoints) {
     return "Swift";
+  } else {
+    return "Javascript";
   }
 }
-
 
 //UI logic
 $(document).ready(function() {
   $(".first-question").click(function() {
     firstResponse = $("input:radio[name=question1]:checked").val();
     if (firstResponse === "seat") {
-      $("#question2").prepend("<p>\"Thank you for agreeing to cooperate,\" the Inspector says. \"This shouldn\'t take much of your time.\"</p>")
+      $("#offered-seat").toggle();
     } else if (firstResponse === "no-seat") {
-      $("#question2").prepend("<p>The Inspector stares at you, nonplussed. \"This will go much easier for both of us if you cooperate,\" they say flatly. Bland as the delivery is, you can hear the implied threat.</p>")
+      $("#argued-inquiry").toggle();
     }
   });
 
@@ -56,6 +57,13 @@ $(document).ready(function() {
     console.log(androidName);
     $(".language-chosen").html(result);
     $("#name").html(androidName);
-
+    if (result === "Javascript") {
+      $("#yes-tie").toggle();
+    } else {
+      $("#no-tie").toggle();
+      if (answers[3] === result) {
+        $("#question5-matched").toggle();
+      }
+    }
   });
 });

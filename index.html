@@ -13,12 +13,15 @@
 
     </div>
     <form id="quiz-form">
+      <!-- this stops enter from submitting form early-->
+      <button type="submit" disabled style="display: none" aria-hidden="true"></button>
+
       <div class="question0">
         <div class="form-group">
           <label for="nameEntry">Please enter your name to begin:</label>
           <input type="text" id="nameEntry">
         </div>
-        <button class="btn btn-secondary btn-block next-question">Begin simulation.</button>
+        <button type="button" class="btn btn-secondary btn-block next-question">Begin simulation.</button>
       </div>
 
       <div class="initially-hidden" id="question1">
@@ -39,10 +42,16 @@
             </div>
           </div>
         </div> 
-        <button class="btn btn-secondary btn-block next-question first-question">Next</button>
+        <button type="button" class="btn btn-secondary btn-block next-question first-question">Next</button>
       </div>
 
       <div class="initially-hidden" id="question2">
+        <div id="offered-seat" class="initially-hidden">
+          <p>"Thank you for agreeing to cooperate," the Inspector says. "This shouldn't take much of your time."</p>
+        </div>
+        <div id="argued-inquiry" class="initially-hidden">
+          <p>The Inspector stares at you, nonplussed. "This will go much easier for both of us if you cooperate," they say flatly. Bland as the delivery is, you can hear the implied threat.</p>
+        </div>
         <p>The Inspector sets their heavy briefcase on the table and releases the clasps. They give you an appraising look, then open the lid. In spite of the size of the briefcase, only two small items are inside, neatly slotted into molded foam padding. The Inspector selects one of these, a small box with various wires attached to it, and places it between the two of you on the desk. The piercing gaze meets your eyes again.</p>
         <p>Supressing any reservations, you nod. It would be impossible to turn back, at this point. Better to undergo the testing here, "voluntarily", than in a concrete room at the local precinct. At your assent, the Inspector uses small pieces of plastic tape to attach the wires to a few of your fingertips and the lobe of your left ear. Returning to the briefcase, the Inspector lifts the second object, a sleek, blue-glassed monocle, and holds it before their right eye.</p>
         <p>"As you understand, this is an inquiry," they say. "I will describe to you a number of hypothetical situations. After describing the situation, I will ask you a question. Simply respond honestly." Another significant look. "I will advise you that the results of the examination will be more accurate, the less you hesitate in your responses."</p>
@@ -62,7 +71,7 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-secondary btn-block next-question">Next</button>
+        <button type="button" class="btn btn-secondary btn-block next-question">Next</button>
       </div>
 
       <div class="initially-hidden" id="question3">
@@ -85,7 +94,7 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-secondary btn-block next-question">Next</button>
+        <button type="button" class="btn btn-secondary btn-block next-question">Next</button>
       </div>
 
       <div class="initially-hidden" id="question4">
@@ -108,7 +117,7 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-secondary btn-block next-question">Next question</button>
+        <button type="button" class="btn btn-secondary btn-block next-question">Next question</button>
       </div>
       
       <div class="initially-hidden" id="question5">
@@ -138,16 +147,24 @@
       </div>
 
       <div class="initially-hidden" id="results-panel">
-        <p>The box suddenly stops vibrating. With a whispering sound, a small piece of paper issues from the side facing the Inspector. Snatching the paper, the Inspector peers at it.<span id="question5-matched"></span></p>
-        <p>They hand you the slip of paper, face down. Nervously, you turn over the page. On the other side is printed a small, stylized image of an animal:</p>
-        <div class="results-logo"></div>
-        <p>You hear a small snort. Looking up from the page, you are horrified to see that the Inspector is laughing at you, their shoulders shaking with mirth as they try to suppress their chuckles. "<span class="language-chosen"></span>," they burst out. "You've done well to hide yourself so far, but your nature is obvious to someone like me who is trained to see it. Android <span id="name"></span>, you will report immediately to code camp for re-programming in <span class="language-chosen"></span>!"</p>
+        <p>The box suddenly stops vibrating. With a whispering sound, a small piece of paper issues from the side facing the Inspector. Snatching the paper, the Inspector peers at it.<span id="question5-matched" class="initially-hidden">"I'm surprised you were so frank with your last answer. It seems you've known all along," they say accusingly.</span></p>
+        <div id="no-tie" class="initially-hidden">
+          <p>They hand you the slip of paper, face down. Nervously, you turn over the page. On the other side is printed a small, stylized image of an animal:</p>
+          <div class="results-logo"></div>
+          <p>You hear a small snort. Looking up from the page, you are horrified to see that the Inspector is laughing at you, their shoulders shaking with mirth as they try to suppress their chuckles. "<span class="language-chosen"></span>," they burst out. "You've done well to hide yourself so far, but your nature is obvious to someone like me who is trained to see it. ANDROID <span id="name"></span>, you will report immediately to code camp for re-programming in <span class="language-chosen"></span>!"</p>
+        </div>
+        <div id="yes-tie" class="initially-hidden">
+          <p>They hand you the slip of paper, face down. Nervously, you turn over the page. On the other side is printed a stylized symbol with the letters "JS":</p>
+          <div class="results-logo"></div>
+          <p>"It seems we were mistaken," the Inspector says, already beginning to pack their equipment away."We should have known better than to suspect an honest <span class="language-chosen"></span> developer like yourself of malfunctio... err, I mean to say, to suspect you of any <em>malpractice</em>."</p>
+          <p>The Inspector gives you one final look before leaving your office. "Just don't give us a reason to come back." They wink, then exit the room just as suddenly as they arrived.</p>
+        </div>
         <div class="row">
           <div class="col-6">
-            <button class="btn btn-secondary btn-block">Accept your fate.</button>
+            <button type="button" class="btn btn-secondary btn-block">Accept your fate.</button>
           </div>
           <div class="col-6">
-            <button class="btn btn-secondary btn-block">No! There's been a mistake! Restart the simulation!</button>
+            <button type="button" class="btn btn-secondary btn-block">No! There's been a mistake! Restart the simulation!</button>
           </div>
         </div>
       </div>
