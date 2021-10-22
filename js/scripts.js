@@ -5,11 +5,11 @@ function tallyUp(array) {
   let swPoints = 0;
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === "go") {
+    if (array[i] === "Go") {
       goPoints += 1;
-    } else if (array[i] === "python") {
+    } else if (array[i] === "Python") {
       pyPoints += 1;
-    } else if (array[i] === "swift") {
+    } else if (array[i] === "Swift") {
       swPoints +=1;
     }
   }
@@ -44,12 +44,18 @@ $(document).ready(function() {
     event.preventDefault();
     let answers = [];
     let result;
-
+    let androidName;
     answers[0] = $("input:radio[name=question2]:checked").val();
     answers[1] = $("input:radio[name=question3]:checked").val();
     answers[2] = $("input:radio[name=question4]:checked").val();
     answers[3] = $("input:radio[name=question5]:checked").val();
+    console.log(answers);
     result = tallyUp(answers);
+    console.log(result);
+    androidName = $("input#nameEntry").val();
+    console.log(androidName);
+    $(".language-chosen").html(result);
+    $("#name").html(androidName);
 
   });
 });
