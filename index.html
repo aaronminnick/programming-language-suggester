@@ -11,25 +11,29 @@
   <div class="container">
     <form id="quiz-form">
       <div id="question1">
+        <p>There is a soft tapping at your office door. Despite the suddenness of the interruption, you aren't startled. You've been expecting this - only you can say whether you are ready for the visit, however.</p>
+        <p>"Come in," you say, forcing your voice to be calm.</p>
+        <p>The door opens, and the visitor enters quickly. After a furtive glance back out into the hallway, they shut the door gently, deftly moving the large briefcase they carry out of the way as the door swings closed. They release the doorknob slowly, as if to execute the rotation without any noise. You wonder briefly at the circumspect nature of your visitor's entry. After all, aren't you the one with something, <em>allegedly,</em> to hide?</p>
+        <p>The Inspector turns to face you, and you are unsettled by their penetrating gaze. All of the preparations you've made, the imagining of likely questions and rehearsals of "best responses", flee your mind. After a few moments, the Inspector clears their throat, and you realize they are waiting for you to speak first.</p>
         <div class="row">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugit, illo harum voluptates ducimus sit nostrum quae explicabo placeat repellendus numquam corrupti dolorum accusantium iusto, laborum ad possimus optio ipsam.</p>
-          <h4 class="col-5">You respond:</h4>
+          <h4 class="col-5">You say:</h4>
           <div class="col-7">
             <div class="form-check">
-              <input type="radio" class="form-check-input" id="q1r1" name="question1" value="#" checked>
-              <label for="q1r1">Foo</label>
+              <input type="radio" class="form-check-input" id="q1r1" name="question1" value="seat" checked>
+              <label for="q1r1">"Please, have a seat."</label>
             </div>
             <div class="form-check">
-              <input type="radio" class="form-check-input" id="q1r2" name="question1" value="#">
-              <label for="q1r2">Foo</label>
+              <input type="radio" class="form-check-input" id="q1r2" name="question1" value="no-seat">
+              <label for="q1r2">"This inquiry is ridiculous. I haven't done anything."</label>
             </div>
           </div>
         </div> 
-        <button class="btn btn-secondary btn-block next-question">Next question</button>
+        <button class="btn btn-secondary btn-block next-question">Next</button>
       </div>
 
       <div class="initially-hidden" id="question2">
         <div class="row">
+          <p><span id="question1response"></span></p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fugit, illo harum voluptates ducimus sit nostrum quae explicabo placeat repellendus numquam corrupti dolorum accusantium iusto, laborum ad possimus optio ipsam.</p>
           <h4 class="col-5">You respond:</h4>
           <div class="col-7">
@@ -102,8 +106,6 @@
           </div>
         </div>
         <button type="submit" class="btn btn-secondary btn-block">Await your fate.</button>
-
-        <div class=""
       </div>
     </form>
   </div>
