@@ -25,6 +25,7 @@ $ start index.html
 
 ### Known Bugs:
 * Radio buttons don't reset to their default values (topmost selected) on consecutive "plays".
+* Swift.png transparency isn't working - need to find an alternate image.
 
 _Thanks for reading! Please feel free to contact me with feedback!_
 ***
