@@ -18,6 +18,7 @@ body {
 
 .container {
   background-color: lightsteelblue;
+  padding-bottom: 10px;
 }
 
 .jumbotron {
@@ -27,8 +28,8 @@ body {
   font-family: Courier, monospace;
 }
 
-.btn-dark {
+.btn-block {
   color: cyan;
   background-color: darkslategrey;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }

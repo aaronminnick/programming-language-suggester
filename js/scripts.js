@@ -66,6 +66,16 @@ $(document).ready(function() {
         $("#question5-matched").toggle();
       }
     }
+
+    if (result === "Javascript") {
+      $("a[href='#']").attr("href", "https://www.javascript.com/");
+    } else if (result === "Go") {
+      $("a[href='#']").attr("href", "https://golang.org/");
+    } else if (result === "Python") {
+      $("a[href='#']").attr("href", "https://www.python.org/");
+    } else if (result === "Swift") {
+      $("a[href='#']").attr("href", "https://developer.apple.com/swift/");
+    }
   });
 
   $("#startover").click(function() {
