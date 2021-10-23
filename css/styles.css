@@ -10,3 +10,25 @@ p {
 h4 {
   text-align: end;
 }
+
+body {
+  background-color: black;
+  color: rgb(19, 19, 19);
+}
+
+.container {
+  background-color: lightsteelblue;
+}
+
+.jumbotron {
+  background-color: darkslategrey;
+  color: cyan;
+  text-align: center;
+  font-family: Courier, monospace;
+}
+
+.btn-dark {
+  color: cyan;
+  background-color: darkslategrey;
+  margin-bottom: 10px;
+}

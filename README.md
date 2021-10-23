@@ -26,7 +26,7 @@ $ start index.html
 ### Known Bugs:
 Radio buttons don't reset to their default values (topmost selected) on consecutive "plays".
 
-_Thanks for reading! Please feel free to contact me with feedback!_
+_Thanks for reading! Please feel free to cogitntact me with feedback!_
 ***
 #### [License: CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 ![](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)
