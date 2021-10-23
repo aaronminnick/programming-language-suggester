@@ -5,7 +5,7 @@
 * CSS (including Bootstrap)
 * Javascript (Including jQuery)
 
-This is the week 2 independent project at [Epicodus](https://www.epicodus.com). The goal of the exercise is to take input from a form to suggest a programming language to the user. As the assignment specified we didn't have to base the suggestion on relevance to our form questions, I decided to take a creative angle, based on the interrogation scene Blade Runner. To check out the project, click [HERE](https://aaronminnick.github.io/programming-language-suggester/). Or, follow the setup instructions below to launch the page from a local copy on your machine.
+This is the week 2 independent project at [Epicodus](https://www.epicodus.com). The goal of the exercise is to take input from a form to suggest a programming language to the user. As the assignment specified we didn't have to base the suggestion on relevance to our form questions, I decided to take a creative angle, based on the interrogation scene from Blade Runner. To check out the project, click [HERE](https://aaronminnick.github.io/programming-language-suggester/). Or, follow the setup instructions below to launch the page from a local copy on your machine.
 
 ### Setup Instructions:
 _(Please note, the below instructions are using gitbash on a Windows computer. Commands may vary if you are using a different OS or terminal program.)_
