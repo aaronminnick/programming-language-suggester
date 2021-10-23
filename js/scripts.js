@@ -67,4 +67,10 @@ $(document).ready(function() {
       }
     }
   });
+
+  $("#startover").click(function() {
+    $("#nameEntry").val("");
+    window.location.reload(false);
+  });
+
 });
